@@ -1,6 +1,6 @@
 # Velqano — Official Website
 
-Live site: https://velqano-talent.github.io/
+Live website: https://velqano-talent.github.io/
 
 Velqano is an Ethiopia-first, people-centered recruitment business supporting employers to source, assess, and connect with talent.
 
