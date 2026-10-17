@@ -112,7 +112,16 @@
     .audience-side span { color: var(--gold); font-size: 12px; letter-spacing: .11em; text-transform: uppercase; }
 
     .contact { padding: 86px 0; background: var(--gold-pale); }
-    .contact-inner { display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+    .contact-inner { display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 54px; }
+    .contact-card { padding: 28px; border-radius: 8px; background: rgba(255,255,255,.78); box-shadow: 0 12px 38px rgba(16,34,53,.07); }
+    .contact-row { display: grid; grid-template-columns: 92px 1fr; gap: 14px; padding: 13px 0; border-bottom: 1px solid #e9e3d7; }
+    .contact-row:last-of-type { border-bottom: 0; }
+    .contact-label { color: #7b858c; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+    .contact-value { color: var(--navy); font-size: 14px; overflow-wrap: anywhere; }
+    .contact-value:hover { color: var(--blue); }
+    .contact-socials { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 19px; }
+    .contact-socials a { padding: 9px 12px; border: 1px solid #ded8cc; border-radius: 4px; color: #394c5b; font-size: 12px; font-weight: 650; }
+    .contact-socials a:hover { border-color: var(--blue); background: #fff; color: var(--blue); }
     .contact h2 { max-width: 640px; margin-bottom: 12px; font-size: clamp(38px, 4vw, 52px); }
     .contact p { margin: 0; color: #65717a; line-height: 1.7; }
     .contact .button { flex: 0 0 auto; background: var(--navy); }
@@ -171,7 +180,7 @@
       .audience-main { padding: 36px 28px; }
       .audience-side { padding: 26px 28px; border-top: 1px solid rgba(255,255,255,.1); border-left: 0; }
       .contact { padding: 65px 0; }
-      .contact-inner { align-items: flex-start; flex-direction: column; gap: 24px; }
+      .contact-inner { grid-template-columns: 1fr; align-items: flex-start; gap: 24px; }
       .footer-top { align-items: flex-start; flex-direction: column; }
       .footer-links { flex-wrap: wrap; gap: 18px; }
       .footer-bottom { flex-direction: column; }
@@ -191,7 +200,7 @@
         <a href="#approach">Our approach</a>
         <a href="#about">About Velqano</a>
       </nav>
-      <a class="button nav-cta" href="https://www.linkedin.com/company/velqano/">Talk to our team <span aria-hidden="true">↗</span></a>
+      <a class="button nav-cta" href="#contact">Talk to our team <span aria-hidden="true">↗</span></a>
       <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">☰</button>
     </div>
   </header>
@@ -204,7 +213,7 @@
           <h1>The right people move <em>work forward.</em></h1>
           <p class="hero-copy">Thoughtful recruitment support for employers building stronger teams in Ethiopia. We help make the path from role to right-fit candidate clearer.</p>
           <div class="hero-actions">
-            <a class="button" href="https://www.linkedin.com/company/velqano/">Let’s talk hiring <span aria-hidden="true">↗</span></a>
+            <a class="button" href="#contact">Let’s talk hiring <span aria-hidden="true">↗</span></a>
             <a class="button outline" href="#services">Explore our services</a>
           </div>
           <div class="hero-note"><span><i></i> Employer-focused</span><span><i></i> Practical support</span><span><i></i> People-centered</span></div>
@@ -272,7 +281,7 @@
           <div class="eyebrow">A thoughtful process</div>
           <h2>Clear steps.<br>Human judgment.</h2>
           <p>Every team is different. We start by understanding the role, then shape a search that respects both the employer’s needs and the candidate’s experience.</p>
-          <a class="button outline" href="https://www.linkedin.com/company/velqano/">Start a conversation <span aria-hidden="true">↗</span></a>
+          <a class="button outline" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a>
         </div>
         <div class="steps">
           <article class="step"><div class="step-index">01</div><div><h3>Understand the need</h3><p>We clarify the role, priorities and context behind the hire before beginning the search.</p></div></article>
@@ -298,8 +307,17 @@
 
     <section class="contact" id="contact">
       <div class="shell contact-inner">
-        <div><div class="eyebrow">For employers</div><h2>Let’s talk about the team you’re building.</h2><p>Tell us what you’re hiring for and we’ll start with a conversation.</p></div>
-        <a class="button" href="https://www.linkedin.com/company/velqano/">Contact Velqano <span aria-hidden="true">↗</span></a>
+        <div><div class="eyebrow">For employers</div><h2>Let’s talk about the team you’re building.</h2><p>Tell us what you’re hiring for and we’ll start with a conversation.</p><a class="button" href="mailto:velqanotalent@gmail.com?subject=Hiring%20enquiry">Email Velqano <span aria-hidden="true">↗</span></a></div>
+        <div class="contact-card" aria-label="Contact Velqano">
+          <div class="contact-row"><span class="contact-label">Email</span><a class="contact-value" href="mailto:velqanotalent@gmail.com">velqanotalent@gmail.com</a></div>
+          <div class="contact-row"><span class="contact-label">Phone</span><a class="contact-value" href="tel:+251958931230">+251 958 931 230</a></div>
+          <div class="contact-socials" aria-label="Follow Velqano">
+            <a href="https://www.linkedin.com/company/velqano/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="https://t.me/Velqanojobs" target="_blank" rel="noopener noreferrer">Telegram ↗</a>
+            <a href="https://www.instagram.com/velqanotalent/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+            <a href="https://www.tiktok.com/@velqano_official/" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -313,7 +331,7 @@
       <div class="footer-bottom"><span>© <span id="year">2026</span> Velqano</span><strong>Connecting People. Building Possibilities.</strong></div>
     </div>
   </footer>
-  <a class="button mobile-cta" href="https://www.linkedin.com/company/velqano/">Talk to Velqano <span aria-hidden="true">↗</span></a>
+  <a class="button mobile-cta" href="#contact">Talk to Velqano <span aria-hidden="true">↗</span></a>
   <script>
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.links');
